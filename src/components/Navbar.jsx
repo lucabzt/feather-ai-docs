@@ -203,7 +203,7 @@ export default function Navbar({ onMenuToggle }) {
 
           <Link to="/" className="flex items-center gap-3 pl-4">
             <img
-              src="/feather-ai-logo.svg"
+              src="feather-ai-logo.svg"
               alt="FeatherAI Logo"
               className="w-12 h-12"
             />
