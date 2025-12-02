@@ -14,7 +14,7 @@ import FeaturedProjects from './pages/FeaturedProjects';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/feather-ai-docs">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<GettingStarted />} />
