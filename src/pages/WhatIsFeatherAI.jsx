@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import PageHeader from '../components/PageHeader';
 import CodeBlock from '../components/CodeBlock';
 
@@ -70,15 +71,15 @@ export default function WhatIsFeatherAI() {
             Install FeatherAI and create your first agent in minutes. Our Getting Started guide will walk you through
             installation, setup, and your first agent.
           </p>
-          <a
-            href="/"
+          <Link
+            to="/"
             className="inline-flex items-center gap-2 px-6 py-3 bg-[#22c4e0] hover:bg-[#1ab3c9] text-[#0a0a0b] font-semibold rounded-lg transition-colors"
           >
             Get Started
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
             </svg>
-          </a>
+          </Link>
         </div>
       </section>
 

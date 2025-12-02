@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import CodeBlock from '../components/CodeBlock';
 import PageHeader from '../components/PageHeader';
 
@@ -132,27 +133,27 @@ print(response.content)`}
           Now that you have FeatherAI installed, explore more features:
         </p>
         <div className="grid grid-cols-1 gap-4">
-          <a
-            href="/system-instructions"
+          <Link
+            to="/system-instructions"
             className="block bg-gradient-to-r from-[#be3389]/10 to-[#0357c1]/10 border border-[#2a2a2c] hover:border-[#22c4e0] rounded-lg p-4 transition-colors"
           >
             <h3 className="text-lg font-semibold text-[#22c4e0] mb-2">System Instructions →</h3>
             <p className="text-sm text-[#a0a0a3]">Learn how to provide detailed instructions to your agents</p>
-          </a>
-          <a
-            href="/tool-calling"
+          </Link>
+          <Link
+            to="/tool-calling"
             className="block bg-gradient-to-r from-[#be3389]/10 to-[#0357c1]/10 border border-[#2a2a2c] hover:border-[#22c4e0] rounded-lg p-4 transition-colors"
           >
             <h3 className="text-lg font-semibold text-[#22c4e0] mb-2">Tool Calling →</h3>
             <p className="text-sm text-[#a0a0a3]">Integrate custom functions and tools with your agents</p>
-          </a>
-          <a
-            href="/examples"
+          </Link>
+          <Link
+            to="/examples"
             className="block bg-gradient-to-r from-[#be3389]/10 to-[#0357c1]/10 border border-[#2a2a2c] hover:border-[#22c4e0] rounded-lg p-4 transition-colors"
           >
             <h3 className="text-lg font-semibold text-[#22c4e0] mb-2">Examples →</h3>
             <p className="text-sm text-[#a0a0a3]">See real-world examples and use cases</p>
-          </a>
+          </Link>
         </div>
       </section>
     </div>

@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
 import Navbar from './Navbar';
 import Sidebar from './Sidebar';
+import TableOfContents from './TableOfContents';
 import { highlightText, removeHighlights } from '../utils/search';
 
 export default function Layout() {
@@ -76,8 +77,11 @@ export default function Layout() {
 
       {/* Main Content */}
       <main className="pt-16 lg:pl-64 transition-all duration-300">
-        <div className="px-8 py-8 max-w-4xl relative z-10">
-          <Outlet />
+        <div className="px-8 py-8 flex gap-8 relative z-10">
+          <div className="flex-1 max-w-4xl">
+            <Outlet />
+          </div>
+          <TableOfContents />
         </div>
       </main>
     </div>
